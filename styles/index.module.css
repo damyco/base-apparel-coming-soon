@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  max-width: 1440px;
+  -webkit-box-shadow: 4px 3px 59px -19px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 4px 3px 59px -19px rgba(0, 0, 0, 0.49);
+  box-shadow: 4px 3px 59px -19px rgba(0, 0, 0, 0.49);
+}
+
+.container {
+  padding: 4rem 13rem;
+  background-image: url("../public/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroImageDesktop {
+  width: 100%;
+  background-image: url("../public/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroImageMobile {
+  display: none;
+}
+
+.logo {
+  padding-bottom: 6rem;
+}
+
+.headingThin {
+  font-weight: 300;
+  color: var(--desaturated-red);
+}
+
+@media screen and (max-width: 376px) {
+  .wrapper {
+    width: 100vw;
+  }
+  .container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .logo {
+    padding: 2rem;
+    max-width: 50%;
+  }
+
+  .heroImageMobile {
+    display: block;
+    height: 250px;
+    margin-bottom: 3rem;
+    background-image: url("../public/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .heroImageDesktop {
+    display: none;
+  }
+}

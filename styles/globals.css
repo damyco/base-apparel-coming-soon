@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
 }
 
 a {
@@ -13,4 +15,66 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Global variables, styles, colours */
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-greyish-red: hsl(0, 6%, 24%);
+}
+
+p {
+  color: var(--desaturated-red);
+  font-weight: 400;
+  line-height: 1.7;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--dark-greyish-red);
+  text-transform: uppercase;
+  display: table-caption;
+  letter-spacing: 1rem;
+  padding: 1rem 0;
+}
+
+main {
+  background-color: hsl(160, 0, 226);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+/* fix blue background from autocompletion */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+@media screen and (max-width: 376px) {
+  main {
+    margin: 0;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+  }
 }
