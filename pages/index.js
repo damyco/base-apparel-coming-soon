@@ -7,7 +7,6 @@ export default function IndexPage() {
     <>
       <Head>
         <title>We&apos;re coming soon! | Base Apparel</title>
-        <meta charset="UTF-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
